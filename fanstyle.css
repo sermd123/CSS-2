@@ -1,0 +1,42 @@
+body {
+  background-color: #111;
+}
+
+#fan{
+  /*background-color: green;*/
+  width: 1px;
+  position: absolute;
+  left: 50%;
+}
+
+#fan div{
+  transition: 1s;
+  /*background-color: blue;*/
+  width: 150px;
+  position: absolute;
+  top:200px;
+left: -75px;
+height: 600px;
+}
+/*#############################################################################*/
+
+#fan:hover div:nth-child(1){
+transform: rotate(-40deg);
+}
+#fan:hover div:nth-child(2){
+transform: rotate(-20deg);
+}
+
+#fan:hover div:nth-child(3){
+transform: rotate(0deg);
+}
+#fan:hover div:nth-child(4){
+transform: rotate(20deg);
+}
+#fan:hover div:nth-child(5){
+transform: rotate(40deg);
+}
+#fan img{
+  border: 5px solid white;
+  box-shadow: 10px 10px 30px black;
+}

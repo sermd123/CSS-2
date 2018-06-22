@@ -1,0 +1,36 @@
+body{
+  background-color: #333
+}
+#chico{
+  position: absolute;
+  border: 1px solid white;
+  overflow: hidden;
+  }
+
+  #chico div{
+    border: 1px solid red;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    font-family: arial;
+    color: white;
+  }
+figure::before{
+  content: "";
+  background-color: green;
+  width: 600px;
+  height: 500px;
+  display: block;
+  position: absolute;
+  opacity: 0.5;
+  }
+#chico img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+#chico:hover img{
+  transform: scale(1);
+}
